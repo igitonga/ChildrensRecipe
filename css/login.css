@@ -1,0 +1,70 @@
+/* general styling */
+@import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+    --clr-p: #4a0072;
+    --clr-s: #ae52d4;
+}
+
+.wrapper{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0,0.8),rgba(0, 0, 0, 0.8)),url(../images/landing_page.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Sarala', sans-serif;
+}
+
+/* login form */
+.login_container{
+    background-color: #ffffff;
+    padding: 2em;
+    border-radius: 5px;
+}
+
+h3{
+    text-align: center;
+    color: var(--clr-p);
+}
+
+.login_container .email, .password{
+    padding: .5em;
+    font-size: 1em;
+    width: 18rem;
+    margin-top: 1em;
+}
+
+.login_container .btnLogin{
+    font-size: 1em;
+    padding: .6em;
+    width: 18rem;
+    margin-top: 1.2em;
+    background-color: var(--clr-p);
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.login_container .btnLogin:hover{
+    cursor: pointer;
+    opacity: .9;
+}
+
+.login_container .forgotPassword{
+    margin-top: 1em;
+    text-align: right;
+    color: var(--clr-p);
+}
+
+.login_container .forgotPassword:hover{
+    cursor: pointer;
+    color: var(--clr-s);
+}

@@ -1,0 +1,114 @@
+/* general styling */
+@import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+    --clr-p: #4a0072;
+    --clr-s: #ae52d4;
+}
+
+/* navbar */
+.nav_cont{
+    background: var(--clr-p);
+    height: 7vh;
+}
+.nav-bar{
+    float: right;
+}
+.nav-bar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-right: 2em;
+}
+.nav-bar ul li{
+    padding: 1em 2em;
+}
+.nav-bar ul li a{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-bar ul li a:hover{
+    color: var(--clr-s);
+}
+
+/* search bar */
+
+.search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.search #searchBar{
+    padding: 1em;
+    width: 450px;
+    font-size: 1em;
+    position: relative;
+    border: 1px solid var(--clr-p);
+    border-radius: 5px;
+}
+
+.search #searchBtn{
+    display: none;
+}
+
+.search .fa-search{
+    position: absolute;
+    color: var(--clr-p);
+    left: 35.5em;
+    top: 3.1em;
+    font-size: 1.7em;
+    cursor: pointer;
+}
+
+/* display recipes */
+.card-deck{
+    margin-top: 2em;
+    margin-left: 16em;
+    margin-right: 16em;
+}
+
+.card-deck .card{
+    margin-bottom: .5em;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 1em;
+    border-radius: 10px;
+    background: #FAF0E6;
+}
+
+.card-deck .card:hover{
+    cursor: pointer;
+}
+
+.card-deck .card .card_image{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-deck .card .card_col{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+}
+
+.card .card_col .card_title{
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: .8em;
+}
+
+.card .card_col .card_desc{
+    font-size: 1.1em;
+}

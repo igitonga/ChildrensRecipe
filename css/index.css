@@ -1,0 +1,56 @@
+/* general styling */
+@import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+    --clr-p: #4a0072;
+    --clr-s: #ae52d4;
+}
+
+/* landing page */
+.landing_page{
+    background: url(../images/landing_page.jpg);
+    height: 100vh;
+}
+/* navbar */
+.nav_cont{
+    background: var(--clr-p);
+    height: 7vh;
+}
+.nav-bar{
+    float: right;
+}
+.nav-bar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-right: 2em;
+}
+.nav-bar ul li{
+    padding: 1em 2em;
+}
+.nav-bar ul li a{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-bar ul li a:hover{
+    color: var(--clr-s);
+}
+
+.title_cont{
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title_cont p{
+    font-size: 5em;
+    color: var(--clr-p);
+}
